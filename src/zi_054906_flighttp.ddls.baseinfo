@@ -1,0 +1,15 @@
+{
+"BASEINFO":
+{
+"FROM":
+[
+"ZI_054906_FLIGHT"
+],
+"ASSOCIATED":
+[
+"ZI_054906_CONNECTIONTP"
+],
+"BASE":
+[]
+}
+}

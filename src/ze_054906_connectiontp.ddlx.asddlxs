@@ -1,0 +1,76 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+    title.value: 'CarrierId',
+    description.value: 'ConnectionId',
+    typeNamePlural: 'Connections',
+    typeName: 'Connection'
+}
+annotate view ZC_054906_ConnectionTP with
+{
+  @UI: {
+      lineItem: [{ position: 10 },
+                 { type: #FOR_ACTION,
+                   position: 10,
+                   dataAction: 'BOPF:SET_FLIGHTTYPE_TO_X',
+                   label: 'Set Flight Type to X' }],
+      selectionField: [{ position: 10 }],
+      identification: [{ position: 10 }]
+  }
+  CarrierId;
+  @UI: {
+      lineItem: [{ position: 20 }],
+      selectionField: [{ position: 20 }],
+      identification: [{ position: 20 }]
+  }
+  ConnectionId;
+  @UI: {
+      identification: [{ position: 30 }]
+  }
+  DepartureCountry;
+  @UI: {
+      lineItem: [{ position: 40 }],
+      selectionField: [{ position: 40 }],
+      identification: [{ position: 40 }]
+  }
+  DepartureCity;
+  @UI: {
+      lineItem: [{ position: 50 }],
+      identification: [{ position: 50 }]
+  }
+  DepartureAirport;
+  @UI: {
+      identification: [{ position: 60 }]
+  }
+  ArrivalCountry;
+  @UI: {
+      lineItem: [{ position: 70 }],
+      selectionField: [{ position: 70 }],
+      identification: [{ position: 70 }]
+  }
+  ArrivalCity;
+  @UI: {
+      lineItem: [{ position: 80 }],
+      identification: [{ position: 80 }]
+  }
+  ArrivalAirport;
+  @UI: {
+      identification: [{ position: 90 }]
+  }
+  DepartureTime;
+  @UI: {
+      identification: [{ position: 100 }]
+  }
+  ArrivalTime;
+  @UI: {
+      identification: [{ position: 110 }]
+  }
+  Distance;
+  @UI: {
+      identification: [{ position: 120 }]
+  }
+  FlightType;
+  @UI: {
+      identification: [{ position: 130 }]
+  }
+  Period;
+}
